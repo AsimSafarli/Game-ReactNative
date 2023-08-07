@@ -1,12 +1,20 @@
 import React from 'react'
-import { Text, View } from 'react-native'
-
+import {  View,TextInput, StyleSheet } from 'react-native'
+import PrimaryButton from '../Components/PrimaryButton'
+import styles from '../Styles/StartGame'
 function StartGame() {
   return (
-    <View>
-    <Text>Start Game</Text>
+    <View style={styles.startgame}>
+    <TextInput/>
+    <View style={styles.startgamebutton}>
+    <PrimaryButton >Reset</PrimaryButton>
+    <PrimaryButton >Confirm</PrimaryButton>
+
+    </View>
+    
     </View>
   )
 }
+
 
 export default StartGame
