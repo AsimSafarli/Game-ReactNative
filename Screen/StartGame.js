@@ -5,9 +5,11 @@ import styles from '../Styles/StartGame'
 function StartGame() {
   return (
     <View style={styles.startgame}>
-    <TextInput/>
+    <TextInput style={styles.input} maxLength={2} keyboardType="number-pad" autoCapitalize="none" />
     <View style={styles.startgamebutton}>
-    <PrimaryButton >Reset</PrimaryButton>
+    <PrimaryButton >
+    
+    Reset</PrimaryButton>
     <PrimaryButton >Confirm</PrimaryButton>
 
     </View>
